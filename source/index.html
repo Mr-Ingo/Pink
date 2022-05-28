@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head class="page">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="mainHeader">
+    <a href="#" class="mainHeader__logoWrapper">
+      <img class="mainHeader__logoText" src="https://dummyimage.com/74x23/ccc/fff" width="74" height="23" alt="Pink">
+    </a>
+    <nav class="mainNav">
+      <button class="mainNav__toggle" type="button"><span class="visuallyHidden">Открыть меню</span></button>
+      <ul class="mainNav__list">
+        <li class="mainNav__item mainNav__item--active"><a href="#">Главная</a></li>
+        <li class="mainNav__item"><a href="photos.html">Фотографии</a></li>
+        <li class="mainNav__item"><a href="contest.html">Конкурс</a></li>
+        <li class="mainNav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pageMain">
+    <h1 class="visuallyHidden">Pink - мобильное приложение</h1>
+    <section class="promo">
+      <h2 class="visuallyHidden">Промо Pink</h2>
+      <p class="promo_slogan slogan">
+        Взгляните на жизнь
+        иначе!
+      </p>
+      <figure class="promo__illustration">
+        <img src="https://dummyimage.com/320x286/8a8a8a/fff" width="320" height="286" alt="Пример использования приложения Pink">
+      </figure>
+      <footer class="promo__footer">
+        <a href="#" class="promo_downaloadApp buttonCustom1">Скачать приложение</a>
+        <ul class="promo__linksDownaloadApp linksDownaloadApp">
+          <li class="linksDownaloadApp__item">
+            <a сlass="linksDownaloadApp__link" href="#">
+              <h3 class="visuallyHidden">Для Apple</h3>
+              <img src="https://dummyimage.com/47x56/8a8a8a/fff" width="47" height="56" alt="лого Apple">
+            </a>
+          </li>
+          <li class="linksDownaloadApp__item">
+            <a сlass="linksDownaloadApp__link" href="#">
+              <h3 class="visuallyHidden">Для Android</h3>
+              <img src="https://dummyimage.com/47x56/8a8a8a/fff" width="47" height="56" alt="лого Android">
+            </a>
+          </li>
+          <li class="linksDownaloadApp__item">
+            <a сlass="linksDownaloadApp__link" href="#">
+              <h3 class="visuallyHidden">Для Microsoft</h3>
+              <img src="https://dummyimage.com/47x56/8a8a8a/fff" width="47" height="56" alt="лого Microsoft">
+            </a>
+          </li>
+        </ul>
+        <small class="promo__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+      </footer>
+    </section>
+    <section class="benefits">
+      <h2 class="visuallyHidden">Бенефиты Pink</h2>
+      <p class="benefits_slogan slogan">
+        Устали от серости<br> мегаполиса?<br><br>
+        Нам есть, что вам<br>
+        предложить!
+      </p>
+      <ul class="benefits__list benefitsList">
+        <li class="benefitsList__item">
+          <h3 class="benefitsList__title">Поднимает настроение</h3>
+          <p class="benefitsList__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="benefitsList__item">
+          <h3 class="benefitsList__title">Меняет мир вокруг</h3>
+          <p class="benefitsList__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="benefitsList__item">
+          <h3 class="benefitsList__title">Заводит новых друзей</h3>
+          <p class="benefitsList__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <figure class="benefits__illustration">
+        <img src="https://dummyimage.com/157x320/8a8a8a/fff" width="157" height="320" alt="Пример использования приложения">
+      </figure>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visuallyHidden">Отзывы</h2>
+          <ul class="reviews__list reviewsList slider__list">
+            <li class="reviewsList__item slider__item">
+              <h3 class="reviewsList__title">Николай Петров</h3>
+              <blockquote class="reviewsList__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+    </section>
+    <section class="tariffs">
+      <div class="tariffs__wrapper slider">
+        <h2 class="visuallyHidden">Тарифы</h2>
+        <ul class="tariffs__list tariffsList slider__list">
+          <li class="tariffsList__item tariff tariff--hit slider__item">
+            <header class="tariff__header">
+              <h3 class="tariff__title">База</h3>
+              <p class="tariff__price">1,99 USD</p>
+            </header>
+            <ul class="tariff__optionsList">
+              <li class="tariff__option tariff__option--enabled">Розовый фильтр<span class="visuallyHidden">включено</span></li>
+              <li class="tariff__option tariff__option--disabled">Смайлики<span class="visuallyHidden">выключено</span></li>
+              <li class="tariff__option tariff__option--disabled">Комментарии<span class="visuallyHidden">выключено</span></li>
+            </ul>
+          </li>
+          <li class="tariffsList__item tariff tariff--hit slider__item">
+            <header class="tariff__header">
+              <h3 class="tariff__title">Стандарт</h3>
+              <p class="tariff__price">3,99 USD</p>
+            </header>
+            <ul class="tariff__optionsList">
+              <li class="tariff__option tariff__option--enabled">Розовый фильтр<span class="visuallyHidden">включено</span></li>
+              <li class="tariff__option tariff__option--enabled">Смайлики<span class="visuallyHidden">включено</span></li>
+              <li class="tariff__option tariff__option--disabled">Комментарии<span class="visuallyHidden">выключено</span></li>
+            </ul>
+          </li>
+          <li class="tariffsList__item tariff tariff--hit slider__item">
+            <header class="tariff__header">
+              <h3 class="tariff__title">АНЛИМ</h3>
+              <p class="tariff__price">9,99 USD</p>
+            </header>
+            <ul class="tariff__optionsList">
+              <li class="tariff__option tariff__option--enabled">Розовый фильтр<span class="visuallyHidden">включено</span></li>
+              <li class="tariff__option tariff__option--enabled">Смайлики<span class="visuallyHidden">включено</span></li>
+              <li class="tariff__option tariff__option--enabled">Комментарии<span class="visuallyHidden">включено</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visuallyHidden">Контакты</h2>
+      <p class="contacts__slogan slogan">
+        Остались вопросы?<br>
+        Свяжитесь с нами!
+      </p>
+      <ul class="contacts__list contactsList">
+        <li class="contactsList__item contact">
+          <h3 class="contact__title">Звоните:</h3>
+          <a href="tel:+78125556666" class="contact__link">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contactsList__item contact">
+          <h3 class="contact__title">Пишите:</h3>
+          <a href="mailto:mail@htmlacademy.ru" class="contact__link">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contactsList__item contact">
+          <h3 class="contact__title">Приезжайте в гости:</h3>
+          <a href="" class="contact__link">
+            ул. Большая
+            Конюшенная, 19/8
+          </a>
+        </li>
+        <figure class="contacts__map">
+          <img src="https://dummyimage.com/320x200/8a8a8a/fff" width="320" height="200" alt="ул. Большая
+            Конюшенная, 19/8">
+        </figure>
+      </ul>
+    </section>
+  </main>
+  <footer class="mainFooter">
+    <a href="#" class="mainFooter__logoWrapper">
+      <img class="mainFooter__logo" src="https://dummyimage.com/59x40/8a8a8a/fff" width="59" height="40" alt="логотип Pink">
+      <img class="mainFooter__logoText" src="https://dummyimage.com/74x23/ccc/fff" width="74" height="23" alt="Pink">
+    </a>
+    <ul class="footer__socialNetworks socialNetworks">
+      <li class="socialNetworks__item">
+        <a href="#" class="socialNetworks__link socialNetworks__link--twitter">
+          <span class="visuallyHidden">twitter</span>
+        </a>
+      </li>
+      <li class="socialNetworks__item">
+        <a href="#" class="socialNetworks__link socialNetworks__link--facebook">
+          <span class="visuallyHidden">facebook</span>
+        </a>
+      </li>
+      <li class="socialNetworks__item">
+        <a href="#" class="socialNetworks__link socialNetworks__link--youtube">
+          <span class="visuallyHidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">
+      Разработано:
+      <a class="copyright__logoWrapper">
+        <img class="copyright__logo" src="https://dummyimage.com/27x34/8a8a8a/fff" width="27" height="34" alt="лого HTML Academy">
+      </a>
+    </p>
+  </footer>
+  <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+</html>
+
+
