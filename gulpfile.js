@@ -12,7 +12,7 @@ const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))

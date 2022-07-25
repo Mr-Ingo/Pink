@@ -1,0 +1,27 @@
+.contactsList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 18px;
+
+  @media (min-width: $tabletWidth){
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 42px;
+  }
+
+  @media (min-width: $desktopWidth){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.contactsList__item:last-child{
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktopWidth){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}

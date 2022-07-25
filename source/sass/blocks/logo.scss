@@ -1,0 +1,61 @@
+@media (max-width: $tabletAndMobileWidthOnly){
+  .logo{
+    &:hover{
+      .logo__text,
+      .logo__glasses{
+        fill: #D22856;
+      }
+    }
+    &:active{
+      opacity: 0.3;
+      .logo__text,
+      .logo__glasses{
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.logo__textWithAsterisk{
+  display: none;
+}
+
+.logo__glasses{
+  display: none;
+}
+
+.logo__glassesWithAsterisks{
+  display: none;
+}
+
+.logo__asterisk{
+  display: none;
+}
+
+@media (min-width: $tabletWidth){
+  .logo__textWithAsterisk{
+    display: block;
+  }
+  .logo__text{
+    display: none;
+  }
+  .logo__text--forTablet{
+    display:block;
+  }
+
+  .logo__glasses{
+    display: block;
+  }
+}
+
+@media (min-width: $desktopWidth){
+  .logo__glasses{
+    display: none;
+  }
+  .logo__asterisk{
+    display: block;
+  }
+  .logo__glassesWithAsterisks{
+    display: block;
+  }
+}

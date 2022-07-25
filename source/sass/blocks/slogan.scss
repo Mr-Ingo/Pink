@@ -1,0 +1,37 @@
+.slogan{
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  padding: 0 20px;
+
+  @media (min-width: $tabletWidth){
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @media (min-width: $desktopWidth){
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.slogan__br{
+  display: none;
+
+  @media (min-width: $tabletWidth){
+    &--tablet{
+      display: block;
+    }
+  }
+}
+
+.slogan__hyphenation--onlyMobile{
+  display: none;
+  @media (max-width: $mobileWidthOnly){
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,116 @@
+.benefits{
+  padding-top: 42px;
+
+  @media (min-width: $tabletWidth){
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktopWidth){
+    padding-top: 63px;
+  }
+}
+
+.benefits__slogan{
+  margin-bottom: 58px;
+
+  @media (min-width: $tabletWidth){
+    line-height: 54px;
+    margin-bottom: 84px;
+
+  }
+  @media (min-width: $desktopWidth){
+    margin-bottom: 150px;
+    line-height: 68px;
+  }
+}
+.benefits__wrapper{
+  position: relative;
+  background-color: var(--lightGrey);
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: -7.8vw;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-triangle-white.svg");
+    width: 100%;
+    height: 7.8vw;
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+}
+
+.benefits__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tabletWidth){
+    padding: 0;
+    flex-direction: row;
+    width: 620px;
+    margin: 0 auto;
+    align-items: normal;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktopWidth){
+    width: 940px;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+}
+
+.benefits__list{
+  padding: 55px 0 10px 0;
+
+  @media (min-width: $tabletWidth){
+    order: 1;
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktopWidth){
+    padding-top: 150px;
+  }
+}
+
+.benefits__illustration{
+  margin: 0;
+  height: 277px;
+  overflow: hidden;
+  @media (min-width: $tabletWidth){
+    width: 268px;
+    height: 481px;
+    flex-shrink: 0;
+    margin-top: -49px;
+  }
+  @media (min-width: $desktopWidth){
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    height: 302px;
+    margin: -94px;
+  }
+}
+
+.benefits__img{
+  @media (min-width: $tabletWidth){
+    width: 268px;
+    height: 481px;
+  }
+  @media (min-width: $desktopWidth){
+    width: 292px;
+    height: 302px;
+  }
+}
+
+.benefits__img--onlyDesktop{
+  display: none;
+
+  @media (min-width: $desktopWidth){
+    display: block;
+  }
+}

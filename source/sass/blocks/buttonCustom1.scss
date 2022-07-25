@@ -1,0 +1,20 @@
+.buttonCustom1{
+  display: block;
+  max-width: max-content;
+  padding: 15px 35px 16px 36px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  font-weight: bold;
+
+  @media (min-width: $desktopWidth){
+    font-size: 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 16px;
+  }
+}

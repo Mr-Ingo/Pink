@@ -1,0 +1,22 @@
+.reviews {
+  padding: 41px 20px 63px;
+
+  @media (min-width: $tabletWidth){
+    padding: 34px 0 63px 0;
+  }
+
+  @media (min-width: $desktopWidth){
+    padding: 72px 0 89px 0;
+  }
+}
+
+.reviews__wrapper{
+  @media (min-width: $tabletWidth){
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktopWidth){
+    width: 940px;
+  }
+}

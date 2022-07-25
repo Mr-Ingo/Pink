@@ -1,0 +1,109 @@
+.intro__wrapper{
+  @media (min-width: $tabletWidth){
+    width: 620px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: right -40px bottom;
+    background-size: 700px 545px;
+    background-image: url('../img/iphone-hand-tablet@1x.png');
+    @media (min-resolution: 2dppx){
+      background-image: url('../img/iphone-hand-tablet@2x.png');
+    }
+  }
+  @media (min-width: $desktopWidth){
+    width: 940px;
+    margin: 0 auto;
+    background-position: right -126px bottom;
+    background-size: 1050px 645px;
+    background-image: url('../img/iphone-hand-desktop@1x.png');
+    @media (min-resolution: 2dppx){
+      background-image: url('../img/iphone-hand-desktop@2x.png');
+    }
+  }
+}
+
+.intro__container{
+  padding-top: 24px;
+  @media (min-width: $tabletWidth){
+    width: 300px;
+    padding: 93px 0 114px 0;
+  }
+  @media (min-width: $desktopWidth){
+    width: 300px;
+    padding: 99px 0 123px 0;
+  }
+}
+
+.intro__slogan{
+  color: #ffffff;
+  text-align: center;
+  margin: 0 20px 27px 20px;
+  @media (min-width: $tabletWidth){
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktopWidth){
+    margin-bottom: 36px;
+  }
+}
+
+.intro__illustration{
+  margin: 0 auto;
+  max-width: 320px;
+  height: auto;
+  @media (min-width: $tabletWidth){
+    display: none;
+  }
+}
+
+.intro__illustrationImg{
+  display: block;
+
+  @media (min-width: $tabletWidth){
+    width: 700px;
+    height: 545px;
+  }
+}
+
+.intro__footer{
+  background-color: #1D2631;
+  padding: 28px 20px 29px 20px;
+
+  @media (min-width: $tabletWidth){
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.intro__downaloadAppLink{
+  margin: 0 auto;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.intro__linksDownaloadApp{
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tabletWidth){
+    margin-top: 44px;
+    margin-bottom: 27px;
+  }
+  @media (min-width: $desktopWidth){
+    margin-top: 66px;
+    margin-bottom: 47px;
+  }
+}
+
+.intro__legend{
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  @media (min-width: $tabletWidth){
+   font-size: 18px;
+  }
+}
+

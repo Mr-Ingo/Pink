@@ -1,0 +1,27 @@
+.copyright{
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  @media (min-width: $tabletWidth){
+    align-self: center;
+    // justify-self: end;
+  }
+  @media (min-width: $desktopWidth){
+    font-size: 18px;
+  }
+}
+
+.copyright__logo{
+  fill: #D22856;
+  vertical-align: middle;
+  margin-left: 12px;
+
+  &:hover{
+    fill: #283645;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+}
