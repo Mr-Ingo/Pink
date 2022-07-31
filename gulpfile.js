@@ -60,7 +60,7 @@ const watcher = () => {
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src(["source/img/**/*.{jpg,png,svg}", "!source/img/**/sprite.svg"])
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true})
@@ -94,7 +94,7 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/**/*.webp",
     "source/*.ico"
     ], {
       base: "source"
@@ -171,8 +171,8 @@ const build = gulp.series(
   clean,
   towebp,
   sprite,
-  copy,
   images,
+  copy,
   styles,
   html,
   scripts,
