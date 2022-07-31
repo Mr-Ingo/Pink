@@ -157,7 +157,7 @@ exports.scripts = scripts;
 
 const css = () => {
   return gulp.src([
-    "source/css/**/*.css",
+    "source/css/**/*.css", "!source/css/style.css"
     ], {
       base: "source"
     })
